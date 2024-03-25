@@ -189,6 +189,7 @@ ol {
   width: 225px;
   height: 27px;
   gap: 10px;
+  cursor: pointer;
 }
 
 .content__list-item:not(:last-child) {
@@ -247,6 +248,7 @@ ol {
   height: 34px;
   padding: 8px;
   line-height: normal;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
@@ -266,4 +268,44 @@ ol {
   min-height: 100%;
   justify-content: end;
   max-width: 399px;
+}
+
+.search-form__label-text {
+  padding-left: 3px;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__submit-button:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  border: 1px solid #fff;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.more-button:focus {
+  outline: none;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
 }
