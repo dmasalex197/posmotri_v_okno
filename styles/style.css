@@ -69,12 +69,12 @@ ol {
   gap: 30px;
   justify-content: center;
   align-items: flex-end;
+  width: 100%;
 }
 
 .result {
   display: flex;
   flex-direction: column;
-  width: 62.37%;
   align-self: flex-end;
 }
 
@@ -113,8 +113,8 @@ ol {
   display: flex;
   align-items: flex-start;
   margin-top: var(--m-s);
-  width: 100%;
-  justify-content: space-between;
+  max-width: 711px;
+  gap: 39px;
 }
 
 .search-form__checkbox-list {
