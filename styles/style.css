@@ -106,7 +106,7 @@ ol {
   width: 194px;
   height: 103px;
   object-fit: cover;
-  object-position: center;
+  object-position: right;
 }
 
 .search-form {
@@ -193,7 +193,6 @@ ol {
   position: relative;
   overflow-y: auto;
   height: 298px;
-  padding: 3px;
 }
 
 .content__list-item:not(:last-of-type) {
@@ -216,7 +215,7 @@ ol {
   display: block;
   text-decoration: none;
   color: var(--white);
-  margin: 2px;
+  margin: 3px;
   line-height: 20px;
 }
 
@@ -262,7 +261,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 399px;
 }
 
 .search-form__label-text {
@@ -281,7 +279,7 @@ ol {
   border: 1px solid #fff;
 }
 
-.search-form__label-text:hover > .search-form__label-text {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -289,8 +287,7 @@ ol {
   text-decoration: underline;
 }
 
-.button:active,
-.content__card-link:active {
+.button:active .content__card-link:active {
   background-color: #545050;
 }
 
@@ -312,4 +309,13 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 2px;
 }
